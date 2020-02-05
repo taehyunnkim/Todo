@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand|Raleway&display=swap');
+
+.header {
+    font-family: "Quicksand";
+    font-size: 3em;
+    margin-top: 20vh;
+} 
+
+.container {
+    width: 30vw;
+}
+
+.collection-item {
+    transition: 0.3s ease-in-out all;
+    font-family: "Quicksand";
+    font: 1.5em;
+}
+
+.collection-item:hover {
+    background-color: #ffd5e5;
+    border: 0px;
+    cursor: pointer;
+}
+
+.warning {
+    font-family: "Quicksand";
+    font: 1.5em;
+}
