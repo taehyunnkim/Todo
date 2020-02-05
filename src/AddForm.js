@@ -14,14 +14,16 @@ class AddForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        let id = Math.random();
-        this.setState({
-            id: id
-        });
-        this.props.addItem(this.state);
-        this.setState({
-            content: ''
-        });
+        if(this.state.content !== '') {
+            let id = Math.random();
+            this.setState({
+                id: id
+            });
+            this.props.addItem(this.state);
+            this.setState({
+                content: ''
+            });
+        }
     }
 
     render() {
